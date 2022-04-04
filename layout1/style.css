@@ -1,0 +1,107 @@
+* {
+  font-family: "Noto Sans KR", sans-serif;
+  list-style: none;
+  text-decoration: none;
+  /* 테이블 선 떨어지는거 없애줌 */
+  border-collapse: collapse;
+  margin: 0px;
+  padding: 0px;
+  color: black;
+}
+h1 {
+  font-size: 48px;
+  font-weight: 100;
+}
+.contents {
+  font-size: 20px;
+  font-weight: 100;
+}
+/* 이미지 배경 */
+.intro_bg {
+  background-image: url("images/flash-4244923_1920-1.png");
+  width: 100%;
+  height: 718px;
+}
+
+.header {
+  /* 가로로 배치 */
+  display: flex;
+  width: 1280px;
+  margin: auto; /* 가운데 */
+  background: ;
+  height: 86px;
+}
+.searchArea {
+  width: 300px;
+  height: 40px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  margin-top: 24px;
+}
+
+.searchArea > form > input {
+  border: none;
+  width: 250px;
+  height: 40px;
+  background: rgba(0, 0, 0, 0);
+  color: #fff;
+  padding: 10px;
+}
+
+.searchArea > form > span {
+  width: 50px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+}
+.nav {
+  display: flex;
+  justify-content: flex-end; /*끝에 붙여주기 */
+  line-height: 86px; /*헤더 네비 글자 높이 맞혀주기 */
+  width: calc(1280px - 300px);
+}
+
+.nav > li {
+  margin-left: 84px;
+}
+
+.nav > li > a {
+  color: #fff;
+}
+
+.intro_txt {
+  width: 100%;
+
+  text-align: center;
+  margin: 231px auto 231px auto; /*상우하좌 */
+}
+
+.intro_txt > h1,
+.intro_txt > h4 {
+  color: #fff;
+}
+.amount {
+  position: relative; /*현재 위치에서 */
+  top: -66px;
+  display: flex;
+  width: 1280px;
+  background: blue;
+  margin: auto;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.amount > li {
+  flex: 1; /*한 자리씩 차지해라 */
+  background: white;
+
+  height: 132px;
+}
+/* 마지막 요소 */
+.amount > li:not(:last-child) > div {
+  border-right: 1px solid gray;
+}
+.amount > li > div {
+  text-align: center;
+
+  margin-top: 37px;
+  height: 57px;
+}
