@@ -1,0 +1,161 @@
+:root {
+  --white-color: #fff;
+  --black-color: #140a00;
+
+  --side-padding: 12px;
+  --avatar-size: 36px;
+
+  --font-large: 18px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background: black;
+  color: white;
+  padding: var(--side-padding);
+}
+
+header .logo i {
+  color: red;
+}
+
+header .icons i:first-child {
+  margin-right: 10px;
+}
+.player {
+  position: sticky;
+  top: 0px;
+  text-align: center;
+  background: black;
+}
+.player video {
+  width: 100%;
+  height: 100%;
+  max-width: 1000px;
+}
+
+.info {
+  padding: 15px;
+}
+
+.hashtag {
+  display: flex;
+  color: blue;
+}
+.hashtag li {
+  margin-right: 10px;
+}
+
+.info .metadata .titleAndButton {
+  display: flex;
+}
+.title {
+  font-size: 15px;
+}
+button,
+button:focus {
+  border: none;
+  background: none;
+  cursor: pointer;
+  outline: none;
+}
+.info .views {
+  font-size: 13px;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-around;
+}
+
+.actions button i {
+  display: flex;
+  flex-direction: column; /* 세로 정렬 */
+}
+
+.info .metadata .titleAndButton .title {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+.actions button .active {
+  color: blue;
+}
+
+.channel {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+}
+
+.channel .metadata {
+  display: flex;
+  align-items: center;
+}
+.channel .metadata .info {
+  display: flex;
+  flex-direction: column;
+}
+.channel .metadata img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.channel .subscribe {
+  text-transform: uppercase;
+}
+
+.upNext {
+  padding: 0 10px;
+}
+
+.upNext .item {
+  display: flex;
+}
+
+.upNext .item .img {
+  flex: 1 1 35%;
+}
+.upNext .item .img img {
+  width: 100%;
+}
+.upNext .item .info {
+  flex: 1 1 60%;
+}
+
+.upNext .item .moreBtn {
+  height: 100%;
+  flex: 1 1 5%;
+}
+
+.upNext .item .info {
+  display: flex;
+  flex-direction: column;
+}
+
+.infoAndUpNext {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .infoAndUpNext {
+    flex-direction: row;
+    margin: 15px 0;
+  }
+}
